@@ -24,55 +24,54 @@
                 <div class="col d-flex justify-content-center">
 
                     <div id="corpoCalculadora" class=" "> <!-- Corpo da calculadora // Inicio -->                
-                            <input class="form-control form-control-lg" type="text" id="usuario" placeholder="Tela da Calculadora" disabled ='disabled'>
+                            <input class="form-control form-control-lg text-right" type="text" id="telaCalculadora" placeholder="0" disabled ='disabled'>
 
                             <div class="row mt-2">                        
-                                <button type="button" class="btn btn-info "> <i class="fa-solid fa-c"></i> </button>
+                                <button onclick="operacao('acao','C')" type="button" class="btn btn-info igualCancela"> C </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-square-root-variable"></i> </button>
+                                <button onclick="operacao('acao','√')" type="button" class="btn btn-dark "> √ </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-percent"></i>  </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-divide"></i> </button>
+                                <button onclick="operacao('acao','/')" type="button" class="btn btn-dark "> / </button>
                             </div>
 
 
                             <div class="row">                        
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-7"></i> </button>
+                                <button onclick="operacao('valor','7')" type="button" class="btn btn-dark "> 7 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-9"></i> </button>
+                                <button onclick="operacao('valor','8')" type="button" class="btn btn-dark "> 8 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-9"></i> </button>
+                                <button onclick="operacao('valor','9')" type="button" class="btn btn-dark "> 9 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-xmark"></i> </button>
+                                <button onclick="operacao('acao','*')" type="button" class="btn btn-dark "> x </button>
                             </div>
 
                             <div class="row">                        
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-4"></i> </button>
+                                <button onclick="operacao('valor','4')"  type="button" class="btn btn-dark "> 4 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-5"></i> </button>
+                                <button onclick="operacao('valor','5')" type="button" class="btn btn-dark "> 5 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-6"></i> </button>
+                                <button onclick="operacao('valor','6')" type="button" class="btn btn-dark "> 6 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-minus"></i> </button>
+                                <button onclick="operacao('acao','-')" type="button" class="btn btn-dark "> - </button>
                             </div>
 
                             <div class="row">                        
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-1"></i> </button>
+                                <button onclick="operacao('valor','1')" type="button" class="btn btn-dark "> 1 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-2"></i> </button>
+                                <button onclick="operacao('valor','2')" type="button" class="btn btn-dark "> 2 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-3"></i> </button>
+                                <button onclick="operacao('valor','3')" type="button" class="btn btn-dark "> 3 </button>
                             
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-plus"></i> </button>
+                                <button onclick="operacao('acao','+')" type="button" class="btn btn-dark "> + </button>
                             </div>
 
                             <div class="row">                        
-                                <button type="button" class="btn btn-dark "> <i class="fa-solid fa-0"></i> </button>
+                                <button onclick="operacao('valor','0')" type="button" class="btn btn-dark "> 0 </button>
                             
-                                <button type="button" class="btn btn-dark "> . </button>
+                                <button onclick="operacao('acao','.')" type="button" class="btn btn-dark "> . </button>
                             
-                                <button type="button" class="btn btn-info " id="igual"> <i class="fa-solid fa-equals"></i> </button>
+                                <button onclick="operacao('acao','=')" type="button" class="btn btn-info igualCancela" > = </button>
                             </div>
 
 
